@@ -16,9 +16,9 @@ Users find it difficult to locate relevant information on media platforms due to
 
 ## Data sources and AI methods
 
-Streamwise uses various data sources to generate recommendations, including user interaction data, content metadata, and user demographics. 
+BenWise uses various data sources to generate recommendations, including user interaction data, content metadata, and user demographics. 
 
-- **User Interaction Data:** Tracks user actions (e.g., clicks, views, ratings) to capture preferences.
+- **User Interaction Data:** Tracks user actions (clicks, views, ratings) to capture preferences.
 - **Content Metadata:** Information about content, such as genre, keywords, and tags, to assess similarity.
 - **User Demographics:** Basic information like age and location, which helps tailor recommendations more accurately.
 
@@ -32,7 +32,7 @@ AI techniques include:
 
 ## Challenges
 
-The Streamwise recommendation engine has certain limitations:
+The BenWise recommendation engine has certain limitations:
 * **Cold Start Problem:** The system may struggle with new users or new content due to a lack of initial data.
 * **Algorithmic Bias and Privacy:** Recommender systems can unintentionally reinforce biases, and handling sensitive user data requires strict privacy considerations.
 * **Complex User Preferences:** Users' tastes can be dynamic, making it challenging to adapt recommendations in real-time.
@@ -41,7 +41,7 @@ Ethical considerations include avoiding filter bubbles that limit diverse conten
 
 ## What next?
 
-Streamwise can expand by:
+BenWise can expand by:
 * **Incorporating mood-based and contextual recommendations** to enhance personalization.
 * **Implementing cross-platform support** so that users can carry preferences across multiple media platforms.
 * **Exploring voice-activated personalization** for smart TVs and IoT devices.
@@ -50,8 +50,8 @@ Moving forward, the project would benefit from further expertise in data enginee
 
 ## Acknowledgments
 
-* Inspired by open-source recommendation projects, including the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and research on collaborative filtering.
-* Special thanks to the creators of [Surprise](https://surprise.readthedocs.io/) for their tools supporting collaborative filtering.
+* Inspired by open-source recommendation projects, including the [MovieLens dataset] and research on collaborative filtering.
+* Special thanks to the University of Helsinki for the Building AI course, which inspired and guided the development of this project.
 * Additional gratitude to the open-source community for providing valuable resources that have influenced this project’s development.
 
 
