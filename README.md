@@ -47,28 +47,43 @@ rmse = accuracy.rmse(predictions)
 print(f'RMSE of the model: {rmse}')'''
 
 ## Data sources and AI methods
-User demographics, content metadata, and user interactions are all used by the recommendation engine. Testing is based on publicly available datasets such as MovieLens and Spotify's dataset on Kaggle. Among the AI methods are content-based filtering, collaborative filtering, and deep learning models (such as RNNs and autoencoders).
+
+The recommendation engine in this project utilizes various data sources to generate personalized content suggestions, including:
+
+- **User Demographics:** Information such as age, gender, and location, which can help tailor recommendations more accurately.
+- **Content Metadata:** Details about the content being recommended, such as genre, keywords, and descriptions.
+- **User Interactions:** Data from user behaviors such as clicks, views, ratings, and watch history, which help the system learn user preferences.
+
+For testing the recommendation engine, publicly available datasets such as the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and [Spotify's dataset on Kaggle](https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db) have been used. These datasets provide rich, real-world examples of user interactions with media content, which are essential for training and validating the model.
+
+### AI Techniques Used:
+- **Collaborative Filtering:** A method that relies on user-item interactions to make predictions about what a user may like based on the preferences of similar users.
+- **Content-Based Filtering:** A technique that recommends items similar to those the user has shown interest in, based on the content's attributes (e.g., genre, keywords).
+- **Deep Learning Models:** Models like Recurrent Neural Networks (RNNs) and Autoencoders, which are used for more complex recommendations, such as predicting user preferences over time or learning latent features from the data.
 
 ## Challenges
 
-There are some restrictions on the BenWise recommendation engine:
-* Cold Start Problem: A lack of initial data may cause the system to struggle with new users or new material.
-* Algorithmic Bias and Privacy: Strict privacy considerations must be taken when managing sensitive user data, as recommender systems may inadvertently propagate biases.
-* Complex User Preferences: It can be difficult to modify suggestions in real-time due to users' changing preferences.
-Ethical considerations include avoiding filter bubbles that limit diverse content exposure and ensuring data privacy and security compliance.
+The **BenWise** recommendation engine, like any AI system, has limitations and challenges that need to be addressed:
+
+- **Cold Start Problem:** The system may struggle to provide accurate recommendations for new users or new items due to the lack of historical data.
+- **Algorithmic Bias and Privacy:** Recommendation engines can inadvertently propagate biases, such as reinforcing stereotypes or showing content from certain categories more frequently. Additionally, sensitive user data must be handled with care to ensure privacy and compliance with data protection regulations.
+- **Complex User Preferences:** Users' preferences are often dynamic and context-dependent, which makes it challenging for the system to adapt in real-time.
+
+Ethical considerations also play a key role, including ensuring that the system does not create "filter bubbles" by limiting content diversity and that users' privacy is respected in all interactions.
 
 ## What next?
 
-BenWise can grow by:
-* Adding contextual and mood-based suggestions to improve personalisation.
-* In order to allow consumers to carry their preferences across various media platforms, cross-platform compatibility is being implemented.
-* Investigating voice-activated personalisation for Internet of Things devices and smart TVs.
+To further enhance **BenWise**, the following features could be added:
 
-Moving forward, the project would benefit from further expertise in data engineering and NLP, as well as continuous user testing and feedback.
+- **Mood-Based and Contextual Recommendations:** By analyzing the user's mood or context (e.g., time of day, device used), recommendations could be made even more personalized.
+- **Cross-Platform Support:** The ability to carry over user preferences across multiple platforms (e.g., from mobile to desktop) could improve the user experience.
+- **Voice-Activated Personalization:** Implementing voice control for recommendations, especially for smart TVs and IoT devices, could provide a hands-free, seamless experience for users.
+
+In order to continue evolving this project, further expertise in **data engineering**, **natural language processing (NLP)**, and **user testing** would be beneficial. Continuous feedback from real-world usage would also help to refine the recommendation engine.
 
 ## Acknowledgments
 
-* Inspired by open-source recommendation projects, including the [MovieLens dataset] and research on collaborative filtering.
-* Special thanks to the University of Helsinki for the Building AI course, which inspired and guided the development of this project.
-* Additional gratitude to the open-source community for providing valuable resources that have influenced this project’s development.
+- Inspired by various open-source recommendation systems, including the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and collaborative filtering research.
+- Special thanks to the **University of Helsinki** for the Building AI course, which provided the knowledge and guidance needed to develop this project.
+- Grateful to the open-source community for the tools, libraries, and datasets that made this project possible.
 
