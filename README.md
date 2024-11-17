@@ -44,7 +44,7 @@ model.fit(trainset)
 predictions = model.test(testset)
 rmse = accuracy.rmse(predictions)
 
-print(f'RMSE of the model: {rmse}')
+print(f'RMSE of the model: {rmse}')'''
 
 ## Data sources and AI methods
 User demographics, content metadata, and user interactions are all used by the recommendation engine. Testing is based on publicly available datasets such as MovieLens and Spotify's dataset on Kaggle. Among the AI methods are content-based filtering, collaborative filtering, and deep learning models (such as RNNs and autoencoders).
