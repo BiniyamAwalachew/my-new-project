@@ -9,7 +9,9 @@ BenWise is a recommendation engine driven by artificial intelligence that offers
 
 ## Background
 
-Users find it difficult to locate relevant information on media platforms due to the abundance of digital content, which lowers engagement and increases user loss of talent, both of which limit platform growth. By providing well chosen suggestions, increasing user happiness and retention, and assisting content producers with better discoverability, Benwise fights this.
+Users find it difficult to locate relevant information on media platforms due to the abundance of digital content, which lowers engagement and increases user loss of talent, both of which limit platform growth. By providing well chosen suggestions, increasing user happiness and retention, and assisting content producers with better discoverability, 
+Benwise fights this.
+
 *Resolves media platforms' "content overload"
 *Increases discoverability, which benefits content providers and
 *Increases user loyality and envolvement.
