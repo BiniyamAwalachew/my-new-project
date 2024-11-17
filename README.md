@@ -14,6 +14,48 @@ Users find it difficult to locate relevant information on media platforms due to
 *Increases discoverability, which benefits content providers and
 *Increases user loyality and envolvement.
 
+## Data sources and AI methods
+
+Streamwise uses various data sources to generate recommendations, including user interaction data, content metadata, and user demographics. 
+
+- **User Interaction Data:** Tracks user actions (e.g., clicks, views, ratings) to capture preferences.
+- **Content Metadata:** Information about content, such as genre, keywords, and tags, to assess similarity.
+- **User Demographics:** Basic information like age and location, which helps tailor recommendations more accurately.
+
+Sample datasets used during development include [MovieLens]for movie recommendations and [Spotify's dataset on Kaggle] for music content. These datasets provide real-world scenarios for building and testing algorithms.
+
+AI techniques include:
+* **Collaborative Filtering:** Using user-item interactions to predict what users will enjoy.
+* **Content-Based Filtering:** Leveraging content features to find similar items.
+* **Hybrid Models:** Combining collaborative and content-based methods to enhance recommendation accuracy.
+* **Deep Learning Models:** Autoencoders for feature extraction and Recurrent Neural Networks (RNNs) for capturing sequential patterns in user behavior.
+
+## Challenges
+
+The Streamwise recommendation engine has certain limitations:
+* **Cold Start Problem:** The system may struggle with new users or new content due to a lack of initial data.
+* **Algorithmic Bias and Privacy:** Recommender systems can unintentionally reinforce biases, and handling sensitive user data requires strict privacy considerations.
+* **Complex User Preferences:** Users' tastes can be dynamic, making it challenging to adapt recommendations in real-time.
+
+Ethical considerations include avoiding filter bubbles that limit diverse content exposure and ensuring data privacy and security compliance.
+
+## What next?
+
+Streamwise can expand by:
+* **Incorporating mood-based and contextual recommendations** to enhance personalization.
+* **Implementing cross-platform support** so that users can carry preferences across multiple media platforms.
+* **Exploring voice-activated personalization** for smart TVs and IoT devices.
+
+Moving forward, the project would benefit from further expertise in data engineering and NLP, as well as continuous user testing and feedback.
+
+## Acknowledgments
+
+* Inspired by open-source recommendation projects, including the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and research on collaborative filtering.
+* Special thanks to the creators of [Surprise](https://surprise.readthedocs.io/) for their tools supporting collaborative filtering.
+* Additional gratitude to the open-source community for providing valuable resources that have influenced this project’s development.
+
+
+
 ## How is it used?
 
 BenWise learns user preferences through interactions and interacts with media networks to provide personalised recommendations in real time. With its capacity to improve content discoverability and offer media firms useful data, it is perfect for streaming, music, and news platforms, which benefits both users and content creators.
@@ -45,45 +87,4 @@ predictions = model.test(testset)
 rmse = accuracy.rmse(predictions)
 
 print(f'RMSE of the model: {rmse}')'''
-
-## Data sources and AI methods
-
-The recommendation engine in this project utilizes various data sources to generate personalized content suggestions, including:
-
-- **User Demographics:** Information such as age, gender, and location, which can help tailor recommendations more accurately.
-- **Content Metadata:** Details about the content being recommended, such as genre, keywords, and descriptions.
-- **User Interactions:** Data from user behaviors such as clicks, views, ratings, and watch history, which help the system learn user preferences.
-
-For testing the recommendation engine, publicly available datasets such as the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and [Spotify's dataset on Kaggle](https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db) have been used. These datasets provide rich, real-world examples of user interactions with media content, which are essential for training and validating the model.
-
-### AI Techniques Used:
-- **Collaborative Filtering:** A method that relies on user-item interactions to make predictions about what a user may like based on the preferences of similar users.
-- **Content-Based Filtering:** A technique that recommends items similar to those the user has shown interest in, based on the content's attributes (e.g., genre, keywords).
-- **Deep Learning Models:** Models like Recurrent Neural Networks (RNNs) and Autoencoders, which are used for more complex recommendations, such as predicting user preferences over time or learning latent features from the data.
-
-## Challenges
-
-The **BenWise** recommendation engine, like any AI system, has limitations and challenges that need to be addressed:
-
-- **Cold Start Problem:** The system may struggle to provide accurate recommendations for new users or new items due to the lack of historical data.
-- **Algorithmic Bias and Privacy:** Recommendation engines can inadvertently propagate biases, such as reinforcing stereotypes or showing content from certain categories more frequently. Additionally, sensitive user data must be handled with care to ensure privacy and compliance with data protection regulations.
-- **Complex User Preferences:** Users' preferences are often dynamic and context-dependent, which makes it challenging for the system to adapt in real-time.
-
-Ethical considerations also play a key role, including ensuring that the system does not create "filter bubbles" by limiting content diversity and that users' privacy is respected in all interactions.
-
-## What next?
-
-To further enhance **BenWise**, the following features could be added:
-
-- **Mood-Based and Contextual Recommendations:** By analyzing the user's mood or context (e.g., time of day, device used), recommendations could be made even more personalized.
-- **Cross-Platform Support:** The ability to carry over user preferences across multiple platforms (e.g., from mobile to desktop) could improve the user experience.
-- **Voice-Activated Personalization:** Implementing voice control for recommendations, especially for smart TVs and IoT devices, could provide a hands-free, seamless experience for users.
-
-In order to continue evolving this project, further expertise in **data engineering**, **natural language processing (NLP)**, and **user testing** would be beneficial. Continuous feedback from real-world usage would also help to refine the recommendation engine.
-
-## Acknowledgments
-
-- Inspired by various open-source recommendation systems, including the [MovieLens dataset](https://grouplens.org/datasets/movielens/) and collaborative filtering research.
-- Special thanks to the **University of Helsinki** for the Building AI course, which provided the knowledge and guidance needed to develop this project.
-- Grateful to the open-source community for the tools, libraries, and datasets that made this project possible.
 
